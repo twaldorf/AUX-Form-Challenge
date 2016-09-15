@@ -4,12 +4,118 @@
   <meta charset="UTF-8">
   <meta http-equiv="cleartype" content="on">
   <title></title>
-  
+
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  
+  <link rel="stylesheet" href="./assets/css/styles.css" media="screen">
+
 </head>
 <body>
-
+  <div class="container br8 bg-white">
+    <div class="head bg-ocean white p1 py2">
+      <h1>Sign up for Whoo!</h1>
+      <h2 class="light-blue">50 projects, 500 images, 10 videos, domain binding and technical support</h2>
+    </div>
+    <div class="content p2-tall">
+      <form class="" action="index.html" method="post">
+        <fieldset class="" id="portfolio-details">
+          <legend><span class="number">1</span>Enter portfolio information</legend>
+          <div class="bg-grey p2 br4">
+            <label for="portfolio-name">
+              Portfolio name
+              <input class="br4 validation" type="name" id="portfolio-name" value="" aria-required="true" aria-labelledby="portfolio name" required autofocus>
+              <div class="sprite-check">
+            </div>
+            </label>
+            <label for="portfolio-address">
+              Portfolio address
+              <input class="br4 stub" type="text" id="portfolio-address" value="" aria-required="true" required>
+              <div class="biscuit">.sample.com</div>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="" id="account-details">
+          <legend><span class="number">2</span>Enter account information</legend>
+          <div class="bg-grey p2 br4">
+            <label for="account-name">
+              Name
+              <input class="br4" type="text" id="account-name" value="" aria-required="true" required>
+            </label>
+            <label for="account-address">
+              Email
+              <input class="br4 validation" type="email" id="account-address" value="" aria-required="true" required>
+              <div class="sprite-check"></div>
+              <span class="subtext">
+                Note: we'll never share you email, promise.
+              </span>
+            </label>
+            <label for="account-password">
+              Password
+              <input class="br4" type="password" id="account-password" value="" aria-required="true" required>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="" id="payment-details">
+          <legend><span class="number">3</span>Enter payment information</legend>
+          <div class="bg-grey p2 br4">
+            <label class="m0" for="card-number">
+              <div class="db hacky-div">
+                Card Number
+              </div>
+              <input class="br4 w-50 dib" type="text" id="card-number" value="" pattern="[0-9]{13,16}" aria-required="true" required title="Your card number should be sixteen numerical digits">
+              <div class="amex-faded dib"></div>
+              <div class="visa-faded dib"></div>
+              <div class="discover-faded dib"></div>
+              <div class="mastercard-faded dib"></div>
+            </label>
+            <label class="m0" for="card-code">
+              <div class="db hacky-div">
+                Security Code
+              </div>
+              <input class="br4 w-15 dib" type="" id="card-code" value="" pattern="[0-9]{3,4}" maxlength="4" aria-required="true" required required="required" title="Your security code should be no more than four numerical digits">
+              <div class="sprite-card-code dib">
+              </div>
+            </label>
+            <div class="di">
+              <label class="m0" for="card-month">
+                Expiration date
+              </label>
+              <select name="card-month" aria-required="true" required>
+                <option value="" disabled selected style="display:none">Month</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              /
+              <label class="sr-only" for="card-year">
+              </label>
+              <select id="card-year" aria-required="true" required>
+                <option value="" disabled selected style="display:none">Year</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <div class="tc p2">
+          <button class="btn-green br4 white" type="submit" id="post">Create your portfolio</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
