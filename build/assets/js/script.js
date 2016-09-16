@@ -1,4 +1,4 @@
-//This is super not my code, but I do understand it and can step through it.
+//This is super mostly not my code, but I do understand it and can step through it.
 //Would like to do a much deeper dive at some point.
 $(function() {
   $('#card-number').validateCreditCard(function(result) {
@@ -7,10 +7,11 @@ $(function() {
     } else {
       $('#' + result.card_type.name).addClass(result.card_type.name);
     }
-    if(!result.valid) {
-      $('#card-number').removeClass("valid");
-    } else {
-      $('#card-number').addClass("valid");
-    }
+    // For adding back my check mark/cross mark thingies
+    // if(!result.valid) {
+    //   $('#card-number').removeClass("valid");
+    // } else {
+    //   $('#card-number').addClass("valid");
+    // }
   });
 });
