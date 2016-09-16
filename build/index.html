@@ -9,6 +9,12 @@
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="stylesheet" href="./assets/css/styles.css" media="screen">
 
+  <script src="./assets/js/vendor/jquery.min.js"></script>
+  <script src="./assets/js/vendor/parsley.min.js"></script>
+  <script src="./assets/js/vendor/jquery.creditCardValidator.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+
 </head>
 <body>
   <div class="container br8 bg-white">
@@ -17,7 +23,7 @@
       <h2 class="light-blue">50 projects, 500 images, 10 videos, domain binding and technical support</h2>
     </div>
     <div class="content p2-tall">
-      <form class="" action="index.html" method="post">
+      <form data-parsley-validate class="" action="index.html" method="post">
         <fieldset class="" id="portfolio-details">
           <legend><span class="number">1</span>Enter portfolio information</legend>
           <div class="bg-grey p2 br4">
@@ -63,10 +69,10 @@
                 Card Number
               </div>
               <input class="br4 w-50 dib" type="text" id="card-number" value="" pattern="[0-9]{13,16}" aria-required="true" required title="Your card number should be sixteen numerical digits">
-              <div class="amex-faded dib"></div>
-              <div class="visa-faded dib"></div>
-              <div class="discover-faded dib"></div>
-              <div class="mastercard-faded dib"></div>
+              <div id="amex" class="amex-faded dib"></div>
+              <div id="visa" class="visa-faded dib"></div>
+              <div id="discover" class="discover-faded dib"></div>
+              <div id="mastercard" class="mastercard-faded dib"></div>
             </label>
             <label class="m0" for="card-code">
               <div class="db hacky-div">

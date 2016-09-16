@@ -1,3 +1,6 @@
+/*Imports*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400|Merriweather:400,700);
+
 body{
   background-color:rgb(158, 212, 237);
   color: rgb(101, 101, 101);
@@ -85,7 +88,7 @@ input.stub{
   margin-left: -1rem;
 }
 
-/*Boxes*/
+/* Structure Boxes*/
 .container{
   max-width: 520px;
   margin:auto;
@@ -179,14 +182,14 @@ input.validation:focus:invalid+div{
 }
 
 /*Card Sprites*/
-.amex{background: url('../images/sprite.png') no-repeat 0 0;width: 45px;height: 30px;}
 .amex-faded{background: url('../images/sprite.png') no-repeat -1px -40px;width: 44px;height: 32px;}
-.visa{background: url('../images/sprite.png') no-repeat -48px 0;width: 45px;height: 30px;}
+.amex{background: url('../images/sprite.png') no-repeat 0 0;width: 45px;height: 30px;}
 .visa-faded{background: url('../images/sprite.png') no-repeat -48px -40px;width: 45px;height: 32px;}
-.discover{background: url('../images/sprite.png') no-repeat -96px 0;width: 45px;height: 30px;}
+.visa{background: url('../images/sprite.png') no-repeat -48px 0;width: 45px;height: 30px;}
 .discover-faded{background: url('../images/sprite.png') no-repeat -96px -40px;width: 45px;height: 32px;}
-.mastercard{background: url('../images/sprite.png') no-repeat -144px 0;width: 45px;height: 30px;}
+.discover{background: url('../images/sprite.png') no-repeat -96px 0;width: 45px;height: 30px;}
 .mastercard-faded{background: url('../images/sprite.png') no-repeat -144px -40px;width: 45px;height: 32px;}
+.mastercard{background: url('../images/sprite.png') no-repeat -144px 0;width: 45px;height: 30px;}
 
 /*Buttons*/
 button.btn-green{
@@ -199,4 +202,37 @@ button.btn-green{
   border-top: 1px solid #9ab83e;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400|Merriweather:400,700);
+/*Parsley CSS*/
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  display:none;
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
